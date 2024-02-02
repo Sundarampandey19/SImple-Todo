@@ -6,6 +6,24 @@ const config: Config = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  plugins: [require("daisyui")],
+  daisyui: {
+    themes: [
+      {
+        mytheme: {
+          primary: "#d900ff",
+          secondary: "#939300",
+          accent: "#00c4ae",
+          neutral: "#342824",
+          "base-100": "#fff1e6",
+          info: "#00e7ff",
+          success: "#00e684",
+          warning: "#a67000",
+          error: "#ff0051",
+        },
+      },
+    ],
+  },
   theme: {
     extend: {
       backgroundImage: {
@@ -15,6 +33,5 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
 };
 export default config;
